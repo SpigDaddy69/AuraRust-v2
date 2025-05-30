@@ -1,41 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aura Rust Homepage</title>
+  <title>Aura Rust</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('images/background.png');
+      background: url('Aura_Rust_demo_3.png') no-repeat center top fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: white;
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6); /* Slight dark overlay */
+      padding: 3rem 1rem;
       text-align: center;
     }
-    header {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 1rem;
-    }
+
     header h1 {
       margin: 0;
       font-size: 3rem;
+      color: #ffa500;
+      text-shadow: 2px 2px 10px #000;
     }
+
     .content {
-      margin-top: 3rem;
+      padding: 2rem;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
     }
+
     .btn {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background-color: #7289DA;
+      background: #ff4500;
       color: white;
-      text-decoration: none;
-      font-size: 1.2rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
       border-radius: 5px;
-      margin-top: 2rem;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    footer {
+      display: none;
     }
   </style>
 </head>
@@ -43,9 +54,10 @@
   <header>
     <h1>Welcome to Aura Rust</h1>
   </header>
+
   <div class="content">
-    <p>Join our community on Discord to stay updated!</p>
-    <a href="https://discord.gg/Fq8eK7aZ" class="btn">Join Our Discord</a>
+    <p>Join our community on Discord:</p>
+    <a href="https://discord.gg/Fq8eK7aZ" class="btn" target="_blank">Join Discord</a>
   </div>
 </body>
 </html>
